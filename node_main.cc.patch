@@ -1,0 +1,4 @@
+83c83
+< extern char** environ;
+---
+> extern "C" char** environ;

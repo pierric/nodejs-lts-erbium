@@ -1,0 +1,8 @@
+4607c4607
+<     DSA* dsa_key = EVP_PKEY_get0_DSA(pkey.get());
+---
+>     const DSA* dsa_key = EVP_PKEY_get0_DSA(pkey.get());
+4611c4611
+<     EC_KEY* ec_key = EVP_PKEY_get0_EC_KEY(pkey.get());
+---
+>     const EC_KEY* ec_key = EVP_PKEY_get0_EC_KEY(pkey.get());
